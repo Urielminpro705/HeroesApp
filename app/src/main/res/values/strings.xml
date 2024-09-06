@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HeroesApp</string>
+    <string name="login_title">INICIO DE SESIÓN</string>
+    <string name="email">Correo electronico</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar Sesión</string>
+</resources>
