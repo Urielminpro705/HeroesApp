@@ -10,7 +10,7 @@
 
     <ImageView
         android:id="@+id/loginImg"
-        android:contentDescription="commics banner"
+        android:contentDescription="comics banner"
         android:src="@drawable/comics_banner"
         android:layout_width="wrap_content"
         android:scaleType="centerCrop"
