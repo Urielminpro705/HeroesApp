@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
@@ -15,7 +14,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.heroesapp.models.User
-import com.example.heroesapp.ui.HomeActivity
+import com.example.heroesapp.ui.PublisherActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var loginBtn : Button
@@ -29,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val sharedPreferences = getSharedPreferences("mypreferences", MODE_PRIVATE)
         val isLogged = sharedPreferences.getBoolean("isLogged", false)
-        val intent = Intent(this@MainActivity, HomeActivity::class.java)
+        val intent = Intent(this@MainActivity, PublisherActivity::class.java)
         if(isLogged){
             startActivity(intent)
             finish()
@@ -71,7 +70,8 @@ class MainActivity : AppCompatActivity() {
 
             val editor = sharedPreferences.edit()
             editor.putBoolean("isLogged", true)
-            editor.putString("userName", user?.email)
+            editor.putString("userEmail", user?.email)
+            editor.putString("userName", user?.name)
             editor.apply()
             startActivity(intent)
             finish()
