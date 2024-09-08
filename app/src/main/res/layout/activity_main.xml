@@ -97,6 +97,6 @@
         android:textSize="20sp"
         android:background="@drawable/rounded_button"
         android:backgroundTint="@color/red"
-
+        android:textColor="@color/white"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
