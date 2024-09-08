@@ -28,10 +28,9 @@
 
         <ImageView
             android:id="@+id/hero_card_img"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="160dp"
             android:src="@drawable/ironman"
-            android:scaleType="centerCrop"
             android:layout_gravity="center"/>
 
         <TextView
