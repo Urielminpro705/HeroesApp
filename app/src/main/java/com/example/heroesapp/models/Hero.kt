@@ -7,7 +7,7 @@ data class Hero(val id : Int, val name : String, val description : String, val i
                     "Wade Wilson, conocido como Deadpool, es un mercenario con una habilidad única para sanar rápidamente de cualquier " +
                     "herida, gracias a un experimento que le otorgó un factor de curación mejorado. Conocido por su comportamiento " +
                     "excéntrico y su tendencia a romper la cuarta pared, Deadpool combina una gran habilidad en combate con un sentido " +
-                    "del humor oscuro y una actitud irreverente. Aunque a menudo actúa como un antiheroico y desprecia las reglas, su " +
+                    "del humor oscuro y una actitud irreverente. \nAunque a menudo actúa como un antiheroico y desprecia las reglas, su " +
                     "factor de curación le permite sobrevivir a situaciones extremadamente peligrosas y enfrentarse a enemigos formidables. " +
                     "A pesar de su exterior caótico, Wade busca su propio sentido de propósito y redención mientras navega por el mundo " +
                     "del crimen y la heroísmo.", "https://clipart-library.com/images/6cyGj89cn.png", 1),
@@ -16,12 +16,15 @@ data class Hero(val id : Int, val name : String, val description : String, val i
                     "Medio Oriente. Cuando sus captores intentaron forzarlo a construir un arma de destrucción masiva, elaboró, en " +
                     "cambio, una armadura para salvar su vida y escapar del cautiverio. Más tarde, Stark desarrolló su traje, agregando " +
                     "armas y otros dispositivos tecnológicos que diseñaba a través de su compañía Industrias Stark. Usa el traje y " +
-                    "las versiones sucesivas para proteger al mundo como Iron Man. Aunque al principio ocultó su verdadera identidad, " +
+                    "las versiones sucesivas para proteger al mundo como Iron Man. \nAunque al principio ocultó su verdadera identidad, " +
                     "Stark finalmente declaró quién era en un anuncio público, que conmocionó a los allí presentes.","" +
                     "https://i.pinimg.com/originals/b8/79/9b/b8799b58221cf451026e6b9fee336d95.png",1),
-            Hero(3,"Wolverine","Nacido con sentidos aumentados, garras retractiles y un increíble factor de curación, " +
-                    "el hombre conocido como Logan, fue sometido aun procedimiento que unió un indestructible metal a su esqueleto, volviéndolo " +
-                    "incluso un más formidable guerrero , Wolverine!","" +
+            Hero(3,"Wolverine","Logan, conocido como Wolverine, es un mutante con un factor de curación que lo hace casi inmortal y " +
+                    "le permite recuperarse rápidamente de cualquier herida. Nacido con garras óseas retráctiles, su esqueleto fue recubierto con " +
+                    "adamantium, un metal indestructible, como parte de un experimento que lo convirtió en un arma viviente. Wolverine es un " +
+                    "luchador salvaje y experto en combate cuerpo a cuerpo, conocido por su carácter solitario y su lucha interna con su " +
+                    "naturaleza bestial. \nA lo largo de su vida, ha sido parte de los X-Men, utilizando su habilidad para proteger a otros " +
+                    "mutantes y defender a la humanidad, mientras enfrenta su oscuro y doloroso pasado.","" +
                     "https://pngimg.com/uploads/wolverine/wolverine_PNG37.png", 1),
             Hero(4,"Capitan america","Steve Rogers, un joven frágil que fue mejorado a la cima de la perfección humana por un suero " +
                     "experimental S.S.S. (Suero supersoldado) para ayudar a los esfuerzos inminentes del gobierno de Estados Unidos en la Segunda " +

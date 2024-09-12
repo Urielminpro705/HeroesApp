@@ -1,5 +1,6 @@
 package com.example.heroesapp.ui
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -54,7 +55,14 @@ class HeroesActivity : AppCompatActivity() {
         }
         Log.i("El publisher",publisher.toString())
         val heroes = Hero.heroes.filter { it.idPublisher == publisherId }
-        heroesRecyclerView.adapter = HeroesAdapter(heroes)
+        heroesRecyclerView.adapter = HeroesAdapter(heroes) { hero ->
+            Log.i("HerosActivityHero",hero.name)
+            val intent = Intent(this@HeroesActivity, HeroActivity::class.java).apply{
+                putExtra("heroId",hero.id)
+            }
+
+            startActivity(intent)
+        }
         heroesRecyclerView.layoutManager = GridLayoutManager(this, 2)
     }
 }

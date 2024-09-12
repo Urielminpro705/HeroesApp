@@ -29,6 +29,10 @@
             android:name=".ui.HeroesActivity"
             android:exported="false">
         </activity>
+        <activity
+            android:name=".ui.HeroActivity"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>

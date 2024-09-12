@@ -5,7 +5,7 @@
     <color name="black">#000000</color>
     <color name="grey_blue">#BDD5EA</color>
     <color name="red">#C10000</color>
-    <color name="translucent_blue">#FA000B0F</color>
+    <color name="translucent_blue">#F5000B0F</color>
     <color name="more_translucent_blue">#33000B0F</color>
 <!--    <color name="translucent_blue">#FC000D12</color>-->
 </resources>
