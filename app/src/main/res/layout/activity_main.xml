@@ -58,7 +58,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/loginImg"
-        app:layout_constraintVertical_bias="0.101" />
+        app:layout_constraintVertical_bias="0.101"
+        android:fontFamily="@font/teko_variablefont_wght"/>
 
     <EditText
         android:id="@+id/email_input"
@@ -76,7 +77,8 @@
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/loginTitle"
-        app:layout_constraintVertical_bias="0.032" />
+        app:layout_constraintVertical_bias="0.032"
+        android:fontFamily="@font/teko_variablefont_wght" />
 
     <EditText
         android:id="@+id/password_input"
@@ -92,7 +94,8 @@
         app:layout_constraintTop_toBottomOf="@id/email_input"
         app:layout_constraintVertical_bias="0.043"
         android:layout_marginHorizontal="15dp"
-        android:textSize="23sp"/>
+        android:textSize="23sp"
+        android:fontFamily="@font/teko_variablefont_wght"/>
 
     <Button
         android:id="@+id/loginBtn"
@@ -110,6 +113,7 @@
         android:background="@drawable/rounded_button"
         android:backgroundTint="@color/red"
         android:textColor="@color/white"
+        android:fontFamily="@font/teko_variablefont_wght"
         />
 
     <TextView
@@ -123,5 +127,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/loginBtn"
         app:layout_constraintVertical_bias="0.95"
-        android:textColor="@color/grey_blue"/>
+        android:textColor="@color/grey_blue"
+        android:fontFamily="@font/teko_variablefont_wght"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

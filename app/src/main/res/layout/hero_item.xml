@@ -41,6 +41,7 @@
             android:background="@color/white"
             android:textColor="@color/black"
             android:gravity="center"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:fontFamily="@font/teko_variablefont_wght"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

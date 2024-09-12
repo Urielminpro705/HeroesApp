@@ -39,7 +39,7 @@ class HeroesActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             // Cambio de color de la barra de estado, la de navegacion y la linea que divide la barra de navegacion
             window.statusBarColor = ContextCompat.getColor(this, R.color.translucent_blue)
-            window.navigationBarColor = ContextCompat.getColor(this, R.color.dark_blue)
+            window.navigationBarColor = ContextCompat.getColor(this, R.color.translucent_blue)
             window.navigationBarDividerColor = ContextCompat.getColor(this, R.color.red)
             insets
         }

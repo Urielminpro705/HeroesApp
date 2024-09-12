@@ -38,7 +38,8 @@
                 android:text="@string/welcome"
                 android:textSize="30sp"
                 android:textColor="@color/white"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/teko_variablefont_wght"/>
             
             <Space
                 android:layout_width="0dp"
@@ -76,7 +77,8 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/home_header"
-            app:layout_constraintVertical_bias="0.1" />
+            app:layout_constraintVertical_bias="0.1"
+            android:fontFamily="@font/teko_variablefont_wght"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/publishers_recyclerview"
