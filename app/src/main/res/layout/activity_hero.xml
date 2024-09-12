@@ -40,7 +40,7 @@
                 android:layout_marginTop="50dp"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textSize="25sp"
+                android:textSize="40sp"
                 android:textColor="@color/white"
                 android:text="Deadpool"
                 android:fontFamily="@font/teko_variablefont_wght"/>
@@ -56,10 +56,10 @@
                 android:fontFamily="@font/teko_variablefont_wght"/>
 
             <View
-                android:layout_width="85dp"
+                android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="@color/red"
-                android:layout_marginLeft="15dp"
+                android:layout_marginHorizontal="15dp"
                 android:layout_marginBottom="15dp"/>
 
             <TextView
@@ -71,6 +71,7 @@
                 android:textSize="15sp"
                 android:textColor="@color/white"
                 android:fontFamily="@font/poppins_regular"
+                android:layout_marginBottom="40dp"
                 />
         </LinearLayout>
 
