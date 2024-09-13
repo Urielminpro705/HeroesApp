@@ -31,6 +31,7 @@ class PublisherActivity : AppCompatActivity (){
         enableEdgeToEdge()
         setContentView(R.layout.activity_publisher)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            // Agregar padding para barra de estado
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             // Cambio de color de la barra de estado, la de navegacion y la linea que divide la barra de navegacion
@@ -45,6 +46,8 @@ class PublisherActivity : AppCompatActivity (){
         userName = findViewById(R.id.nameTV)
         logoutBtn = findViewById(R.id.logoutBtn)
         publisherRecyclerView = findViewById(R.id.publishers_recyclerview)
+
+        //Funcion click de un publisher
         publisherRecyclerView.adapter = PublisherAdapter(Publisher.publishers) { publisher ->
             Log.i("PublisherActivityHeroes", publisher.name)
             val intent = Intent(this@PublisherActivity, HeroesActivity::class.java).apply{
@@ -62,7 +65,7 @@ class PublisherActivity : AppCompatActivity (){
         }
 
 
-
+        // Cerrar sesion
         logoutBtn.setOnClickListener{
             val editor = sharedPreferences.edit()
             editor.remove("isLogged")

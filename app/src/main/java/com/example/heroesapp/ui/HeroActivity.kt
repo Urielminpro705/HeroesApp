@@ -32,6 +32,7 @@ class HeroActivity() : AppCompatActivity() {
         heroImg = findViewById(R.id.hero_img)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            // Agregar padding para barra de estado
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             // Cambio de color de la barra de estado, la de navegacion y la linea que divide la barra de navegacion

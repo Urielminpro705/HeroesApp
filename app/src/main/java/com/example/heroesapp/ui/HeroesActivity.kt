@@ -34,7 +34,9 @@ class HeroesActivity : AppCompatActivity() {
         publisherImageView = findViewById(R.id.publisher_banner)
         publisherLogoImageView = findViewById(R.id.publisher_banner_logo)
         publisherTV = findViewById(R.id.heroes_publisher_name)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            // Agregar padding para barra de estado
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             // Cambio de color de la barra de estado, la de navegacion y la linea que divide la barra de navegacion
@@ -55,6 +57,7 @@ class HeroesActivity : AppCompatActivity() {
         }
         Log.i("El publisher",publisher.toString())
         val heroes = Hero.heroes.filter { it.idPublisher == publisherId }
+        // Funcion click de un heroe
         heroesRecyclerView.adapter = HeroesAdapter(heroes) { hero ->
             Log.i("HerosActivityHero",hero.name)
             val intent = Intent(this@HeroesActivity, HeroActivity::class.java).apply{
